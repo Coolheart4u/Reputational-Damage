@@ -1,0 +1,46 @@
+* {
+    ;
+}
+
+main { margin-left: 250px;
+        margin-right: 250px; 
+    text-align: justify;}
+
+    
+body{font-family: "poppins", sans-serif;}
+/* Recent Investigations and Collaborations Safeguarding Banks from Money Laundering and Fraud */
+header{
+font-family: "Poppins", sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 45px;
+text-align: center;
+color: #000000;
+margin: 0 250px;
+}
+ 
+.frame3 { padding-right: 40px;}
+.frame5 { padding-right: 40px;
+            padding-left: 40px;}
+.frame01 { padding-right: 40px;}
+.frame02 { padding-right: 40px;
+padding-left: 40px;}    
+
+.frame8 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex; /* Makes divs align horizontally */
+    gap: 100px; /* Adds space between images */
+    justify-content: center; /* Aligns items in the center */
+    align-items: center; /* Aligns images vertically */
+    flex-wrap: wrap; /* Ensures images wrap on smaller screens */
+    text-align: justify;
+    background-color: lightgray;
+
+}
+.frame8 img {
+    width: 150px; /* Set a fixed width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: Rounds the corners */
+}
