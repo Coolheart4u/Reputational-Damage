@@ -44,3 +44,20 @@ padding-left: 40px;}
     height: auto; /* Maintain aspect ratio */
     border-radius: 10px; /* Optional: Rounds the corners */
 }
+
+footer{padding : 10px;
+    text-align: center;
+    background-color:lightgoldenrodyellow;
+    color: black;
+    margin: 0 250px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 45px;
+    text-align: center;
+    color: #000000;
+    margin: 0 250px;
+}
+
+
