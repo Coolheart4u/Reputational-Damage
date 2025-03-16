@@ -1,55 +1,16 @@
-* {
-    ;
-}
-
-main { margin-left: 250px;
-        margin-right: 250px; 
-    text-align: justify;}
-
-    
-body{font-family: "poppins", sans-serif;}
-/* Recent Investigations and Collaborations Safeguarding Banks from Money Laundering and Fraud */
-header{
-font-family: "Poppins", sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 45px;
-text-align: center;
-color: #000000;
-margin: 0 250px;
-}
- 
-.frame3 { padding-right: 40px;}
-.frame5 { padding-right: 40px;
-            padding-left: 40px;}
-.frame01 { padding-right: 40px;}
-.frame02 { padding-right: 40px;
-padding-left: 40px;}    
-
-.frame8 {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    display: flex; /* Makes divs align horizontally */
-    gap: 100px; /* Adds space between images */
-    justify-content: center; /* Aligns items in the center */
-    align-items: center; /* Aligns images vertically */
-    flex-wrap: wrap; /* Ensures images wrap on smaller screens */
+/* Main content area */
+main {
+    margin-left: 250px;
+    margin-right: 250px; 
     text-align: justify;
-    background-color: lightgray;
-
-}
-.frame8 img {
-    width: 150px; /* Set a fixed width */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 10px; /* Optional: Rounds the corners */
 }
 
-footer{padding : 10px;
-    text-align: center;
-    background-color:lightgoldenrodyellow;
-    color: black;
-    margin: 0 250px;
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+/* Header */
+header {
     font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -60,4 +21,118 @@ footer{padding : 10px;
     margin: 0 250px;
 }
 
+/* Padding for specific sections */
+.frame3 { 
+    padding-right: 40px;
+}
+.frame5 { 
+    padding-right: 40px;
+    padding-left: 40px;
+}
+.frame01 { 
+    padding-right: 40px;
+}
+.frame02 { 
+    padding-right: 40px;
+    padding-left: 40px;
+}
 
+/* Frame8 - Images in Flexbox */
+.frame8 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex; /* Makes divs align horizontally */
+    gap: 20px; /* Space between images */
+    justify-content: center; /* Centers the items */
+    align-items: center; /* Vertically aligns images */
+    flex-wrap: wrap; /* Ensures images wrap on smaller screens */
+    text-align: justify;
+    background-color: lightgray;
+}
+
+/* Images inside .frame8 */
+.frame8 img {
+    width: 150px; /* Fixed width for larger screens */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: rounds the corners */
+}
+
+/* Footer */
+footer {
+    padding: 10px;
+    text-align: center;
+    background-color: lightgoldenrodyellow;
+    color: black;
+    margin: 0 250px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 45px;
+    color: #000000;
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+    /* Adjust margin for smaller screens */
+    main {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    header, footer {
+        margin: 0 20px;
+    }
+
+    /* Header font size on smaller screens */
+    header h1 {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    /* Adjust frame8 images for smaller screens */
+    .frame8 {
+        gap: 10px; /* Smaller gap between images */
+        flex-direction: column; /* Stack images vertically on small screens */
+    }
+
+    .frame8 img {
+        width: 100%; /* Make images responsive */
+        max-width: 150px; /* Keep image width within a limit */
+    }
+
+    /* Adjust the font sizes for text */
+    body {
+        font-size: 14px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}
+
+/* Further adjustment for very small screens (e.g. iPhones) */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .frame8 {
+        flex-direction: column; /* Stack images */
+        gap: 5px; /* Even smaller gap */
+    }
+
+    .frame8 img {
+        width: 100%;
+        max-width: 120px; /* Limit image size even more */
+    }
+
+    body {
+        font-size: 12px; /* Smaller font size */
+    }
+
+    footer {
+        font-size: 12px; /* Smaller footer font size */
+    }
+}
